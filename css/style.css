@@ -47,19 +47,17 @@
 }
 
 body {
-  background-color: black;
+  background-color: #111111;
   font-family: "Roboto", sans-serif;
 }
 
 .container {
-  background: rgb(0,0,0);
-  background: black;
+  background: #111111;
   height: auto;
   width:var(--width-full);
 }
 
 .navigation {
-  background-color: #00000088;
   position:relative;
   padding: 35px;
   z-index: 5;
