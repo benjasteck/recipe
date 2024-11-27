@@ -5,163 +5,332 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recipe Site</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-
-          
-  <div id="header3">
-    <div class="container3">
-        <nav>
-            <img src="img/logoo.png" class="logo">
-    
-            <ul id="sidemenu">
-              <li><a href="index.html" id="headerHome">Home</a> </li>
-              <li><a href="subpage.html" id="headerAbout">Recipes</a> </li>
-              <li><a href="aboutUs.html" id="headerProject">About us</a> </li>
-            </ul>
-        </nav>
-    </div>
-</div>
   <div class="container">
+    <nav class="navigation">
+      <div class="menu-container">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="subpage.html">Recipe</a>
+          </li>
+          <li>
+            <a href="about.html">About us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+
+    <section class="hero">
+        <div class="hero-text">
+          <p class="hero-text-small-header">#1 Bender's most shiny recipe</p>
+          <p class="hero-text-big-header">Boozy brown <span class="hero-text-bold">Lentil soup</span></p>
+          <p class="hero-text-small-header">40% healthy</p>
+        </div>
+        <div class="hero-search">
+          <div class="input-container">
+            <img src="img/lupa.png" alt="Search Icon" class="icon-search" height="13px" width="14px">
+            <input type="search" name="" class="search-box" placeholder="Search">
+          </div>
+          <p>Let's go already!</p>
+        </div>
+        
+      </div>
+    </section>
 
     <section class="todays_recipe">
       <div class="todays_recipes_headline ">
-        <h2>Recipes of today</h2>
+        <h2>Today´s Recipes</h2>
+        <img src="img/SeekPng.png" alt=""class="imagesalat">
       </div>
 
-      
-
-    </section>
-    <div class="imageContainer">
-      
-  <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-  
-    <div class="kort" id="kort3">
-  
-      <img class="image" src="img/chicken.png" draggable="false" onclick="expand(this.src)">
-          <div class="kortLayer" id="kortLayer1">
-              <h2 class="cardTitle" id="card1Title">Instant Pot Chicken Marinara</h2>
-              <div class="todays_recipes_content_block_text">
-                <div class="todays_recipes_content_block_text_top">
-                  <p class="cardBody">Lorem Ipsum is simply dummy text of the</p>
-                </div>
-                <div class="todays_recipes_content_block_text_bottom">
-                  <div class="todays_recipes_content_block_bottom_area">
-                    <div class="todays_recipes_content_block_bottom_area_left">
-                      <p class="category-color category-chicken">Chicken</p>
-                      <p class="recipeTitle">Recipe</p>
-                    </div>
-                    <div class="todays_recipes_content_block_bottom_area_right">
-                      <button>
-                        <a href="subpage.html">How to</a>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <div class="todays_recipes_content ">
+        <div class="todays_recipes_content_block">
+          <div class="todays_recipes_content_block_image">
+            <img src="img/krabbe.png" alt="">
           </div>
-      </div>
-      <div class="kort" id="kort3">
-  
-        <img class="image" src="img/chicken.png" draggable="false" onclick="expand(this.src)">
-            <div class="kortLayer" id="kortLayer1">
-                <h2 class="cardTitle" id="card1Title">Instant Pot Chicken Marinara</h2>
-                <div class="todays_recipes_content_block_text">
-                  <div class="todays_recipes_content_block_text_top">
-                    <p class="cardBody">Lorem Ipsum is simply dummy text of the</p>
-                  </div>
-                  <div class="todays_recipes_content_block_text_bottom">
-                    <div class="todays_recipes_content_block_bottom_area">
-                      <div class="todays_recipes_content_block_bottom_area_left">
-                        <p class="category-color category-seafood">Seafood</p>
-                        <p class="recipeTitle">Recipe</p>
-                      </div>
-                      <div class="todays_recipes_content_block_bottom_area_right">
-                        <button>
-                          <a href="subpage.html">How to</a>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+          <div class="todays_recipes_content_block_text">
+            <div class="todays_recipes_content_block_text_top">
+              <h5>Crap’tacular</h5>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+            <div class="todays_recipes_content_block_text_bottom">
+              <div class="todays_recipes_content_block_bottom_area">
+                <div class="todays_recipes_content_block_bottom_area_left">
+                  <p class="category-color" data-category="seafood">Seafood</p>
+                  <p>Recipe</p>
                 </div>
+                <div class="todays_recipes_content_block_bottom_area_right">
+                  <button>
+                    <a href="#">How to</a>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="todays_recipes_content_block">
+          <div class="todays_recipes_content_block_image">
+            <img src="img/chefSalad.png" alt="">
+          </div>
+          <div class="todays_recipes_content_block_text">
+            <div class="todays_recipes_content_block_text_top">
+              <h5>Chick’tastic</h5>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+            <div class="todays_recipes_content_block_text_bottom">
+              <div class="todays_recipes_content_block_bottom_area">
+                <div class="todays_recipes_content_block_bottom_area_left">
+                  <p class="category-color" data-category="chicken">Chicken</p>
+                  <p>Recipe</p>
+                </div>
+                <div class="todays_recipes_content_block_bottom_area_right">                
+                  <button>
+                    <a href="#">How to</a>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="todays_recipes_content_block">
+          <div class="todays_recipes_content_block_image">
+            <img src="img/kage.png" alt="">
+          </div>
+          <div class="todays_recipes_content_block_text">
+            <div class="todays_recipes_content_block_text_top">
+              <h5>Dessert’a’licous </h5>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+            <div class="todays_recipes_content_block_text_bottom">
+              <div class="todays_recipes_content_block_bottom_area">
+                <div class="todays_recipes_content_block_bottom_area_left">
+                  <p class="category-color" data-category="pasta">Pasta</p>
+                  <p>Recipe</p>
+                </div>
+                <div class="todays_recipes_content_block_bottom_area_right">
+                  <button>
+                    <a href="#">How to</a>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="todays_recipes_content_block">
+          <div class="todays_recipes_content_block_image">
+            <img id="weirdImage" src="img/1.png" alt="">
+          </div>
+          <div class="todays_recipes_content_block_text">
+            <div class="todays_recipes_content_block_text_top">
+              <h5>spicy meat’a’bowl</h5>
+              <p></p>
+            </div>
+            <div class="todays_recipes_content_block_text_bottom">
+              <div class="todays_recipes_content_block_bottom_area">
+                <div class="todays_recipes_content_block_bottom_area_left">
+                  <p class="category-color category-seafood" data-category="misc">Misc</p>
+                  <p>Recipe</p>
+                </div>
+                <div class="todays_recipes_content_block_bottom_area_right">
+                  <button>
+                    <a href="#">How to</a>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+        <img src="img/image.png" alt="" class="ring">
+    </section>
+
+    <div class="salat">
+      <img src="img/SeekPng.png" alt="littleSalat">
+    </div>
+    
+
+    <section class="categories">
+      <div class="todays_recipes_headline2 ">
+        <h2>Category Selection</h2>
+      </div>
+      <div class="category-selection">
+        <div class="category-container">
+            <div class="category-item">
+              <div class="vegetarian">
+                <svg width="55" height="35" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.625 10.5555C15.8171 14.5437 12.0076 24.3333 12.0076 24.3333C12.0076 24.3333 6.56554 10.5555 1.125 7.375" stroke="#298F3F" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M28.098 2.09788L28.7548 8.91821C29.1803 13.3428 25.8642 17.2818 21.4396 17.7088C17.0982 18.125 13.1655 14.9523 12.7477 10.611C12.6477 9.57855 12.7522 8.53656 13.0552 7.54457C13.3583 6.55257 13.8538 5.63002 14.5136 4.82966C15.1733 4.0293 15.9844 3.36682 16.9003 2.8801C17.8163 2.39337 18.8192 2.09194 19.8517 1.99304L27.1222 1.29313C27.2391 1.28186 27.3571 1.29374 27.4694 1.32808C27.5818 1.36243 27.6862 1.41858 27.7768 1.49331C27.8675 1.56805 27.9425 1.6599 27.9976 1.76364C28.0527 1.86737 28.0868 1.98095 28.098 2.09788Z" stroke="#298F3F" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </div>
+              <p class="veg">VEGETARIAN</p>
+            </div>
+            <div class="category-item">
+                <div class="seafood">
+                  <svg width="55" height="35" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.5365 7.48438C22.5365 7.71306 22.4686 7.93661 22.3416 8.12675C22.2145 8.3169 22.034 8.4651 21.8227 8.55261C21.6114 8.64012 21.3789 8.66302 21.1546 8.61841C20.9303 8.57379 20.7243 8.46367 20.5626 8.30197C20.4009 8.14026 20.2908 7.93424 20.2462 7.70995C20.2016 7.48566 20.2245 7.25317 20.312 7.0419C20.3995 6.83062 20.5477 6.65004 20.7378 6.52299C20.928 6.39594 21.1515 6.32812 21.3802 6.32812C21.6869 6.32812 21.981 6.44994 22.1978 6.66678C22.4146 6.88362 22.5365 7.17772 22.5365 7.48438ZM28.7181 18.5743C26.6224 21.4649 23.4904 23.4262 19.4131 24.3844C16.391 25.0941 12.8211 25.2516 8.74673 24.8787C8.98376 26.8231 9.34075 28.8846 9.81771 31.0632C9.85102 31.2121 9.82413 31.3681 9.74291 31.4972C9.66169 31.6264 9.53273 31.7182 9.38411 31.7526C9.34324 31.7612 9.30159 31.7656 9.25982 31.7656C9.12824 31.7654 9.00068 31.7203 8.89819 31.6378C8.79571 31.5553 8.72443 31.4403 8.69614 31.3118C8.21437 29.1466 7.84197 26.9585 7.58036 24.7559C5.51838 24.5159 3.33452 24.144 1.02876 23.6401C0.948276 23.6314 0.87052 23.6058 0.800529 23.5651C0.730538 23.5245 0.669872 23.4695 0.622459 23.4039C0.575046 23.3383 0.541944 23.2634 0.525296 23.1842C0.508648 23.105 0.508824 23.0231 0.525815 22.944C0.542806 22.8648 0.576231 22.7901 0.623927 22.7247C0.671623 22.6593 0.732526 22.6046 0.802692 22.5643C0.872859 22.5239 0.950724 22.4987 1.03125 22.4903C1.11177 22.4819 1.19315 22.4906 1.27013 22.5156C3.44677 22.9926 5.50682 23.3496 7.45028 23.5866C7.07161 19.5166 7.23638 15.9496 7.94603 12.9303C8.90427 8.85309 10.8569 5.72109 13.7533 3.62395C17.2351 1.09609 21.4684 0.546875 24.492 0.546875H24.7391C27.9188 0.577227 30.5377 1.20305 30.782 1.34613C30.8671 1.39818 30.9373 1.47137 30.9858 1.55859C31.1303 1.80141 31.7532 4.42031 31.785 7.59855C31.8154 10.6279 31.3081 15 28.7181 18.5743ZM26.9504 18.9255C23.5094 18.4933 20.3103 16.9275 17.8581 14.4753C15.4058 12.023 13.84 8.82389 13.4079 5.38289C9.37255 9.00773 7.77114 15.1561 8.6181 23.7109C17.1743 24.5593 23.3242 22.9593 26.9504 18.9255ZM30.0145 2.31883C28.4478 1.95316 20.2962 0.357539 14.4861 4.5157C14.7425 7.9662 16.2292 11.21 18.6756 13.6567C21.1221 16.1034 24.3657 17.5905 27.8162 17.8473C31.9729 12.04 30.3802 3.88699 30.0145 2.31883Z" fill="#3E30E2"/>
+                    </svg>                    
+                </div>
+                <p class="sea">SEAFOOD</p>
+            </div>
+            <div class="category-item">
+                <div class="pastas">
+                  <svg width="55" height="35" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M36.8568 21.3127H2.47733C-0.334597 21.3127 2.06294 26.488 3.33016 27.2811L7.69789 30.0121C8.13448 30.2873 8.35277 30.4237 8.53407 30.6226C10.1583 32.4171 10.4543 35.5782 12.5078 36.9518C13.3254 37.4999 14.293 37.4999 16.2299 37.4999H23.1043C25.0412 37.4999 26.0087 37.4999 26.8264 36.9518C28.8798 35.5782 29.1758 32.4171 30.8001 30.6226C30.9814 30.4237 31.1997 30.2873 31.6363 30.0121L36.0021 27.2811C37.2712 26.488 39.6669 21.3127 36.8568 21.3127Z" stroke="#BF5B23" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25.217 21.3127C25.217 17.6329 24.0476 14.1038 21.966 11.5018C19.8844 8.89979 17.0611 7.43799 14.1173 7.43799C11.1735 7.43799 8.35021 8.89979 6.26861 11.5018C4.18701 14.1038 3.01758 17.6329 3.01758 21.3127" stroke="#BF5B23" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M36.3167 21.3128C36.3167 14.9281 32.2005 9.75055 27.1224 9.75055C25.4131 9.75055 23.8129 10.3379 22.442 11.36M10.4174 19.5137C10.4174 16.6764 12.0731 14.3755 14.1173 14.3755C16.1615 14.3755 17.8172 16.6764 17.8172 19.5137V23.6253M14.1173 6.41137C14.9146 2.32758 18.4239 -0.234621 21.9555 0.688048C25.4871 1.61303 27.7015 5.66907 26.9041 9.75055" stroke="#BF5B23" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <p class="pasta">PASTAS</p>
+            </div>
+            <div class="category-item">
+                <div class="chicken">
+                  <svg width="55" height="35" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.42798 6.43589V10.564M18.4873 6.43589V10.564M12.459 3.36224V7.49039" stroke="#249C8E" stroke-width="0.857143" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M30.9167 12.6625C30.9167 13.3319 31.1827 13.9738 31.656 14.4472C32.1293 14.9205 32.7713 15.1864 33.4407 15.1864C34.1101 15.1864 34.752 14.9205 35.2254 14.4472C35.6987 13.9738 35.9646 13.3319 35.9646 12.6625C35.9646 11.9931 35.6987 11.3511 35.2254 10.8778C34.752 10.4045 34.1101 10.1385 33.4407 10.1385C32.7713 10.1385 32.1293 10.4045 31.656 10.8778C31.1827 11.3511 30.9167 11.9931 30.9167 12.6625Z" stroke="#249C8E" stroke-width="0.857143" stroke-linecap="round"/>
+                    <path d="M29.1513 23.4321L29.7116 23.6779C33.623 25.5279 34.7039 27.9223 34.7039 31.21V31.9976C34.7039 32.6985 34.4255 33.3707 33.9298 33.8664C33.4342 34.362 32.762 34.6404 32.0611 34.6404H4.83434C3.97013 34.6404 3.15877 34.2149 2.82577 33.4168C2.0937 31.6487 1.2427 28.0967 3.45477 23.6779C6.65263 17.2927 14.5204 15.8894 19.5603 18.5322L19.7982 18.6538" stroke="#249C8E" stroke-width="0.857143" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M27.3462 26.9445C29.7988 24.254 29.9256 20.377 27.6316 18.2891C25.3376 16.2012 21.4923 16.6902 19.0423 19.3806C16.8144 21.8252 16.5052 25.2451 18.1834 27.4149C18.3526 27.6369 18.5455 27.8457 18.7569 28.036" stroke="#249C8E" stroke-width="0.857143" stroke-linecap="round"/>
+                    <path d="M31.7016 14.4966L27.7743 18.4212" stroke="#249C8E" stroke-width="0.857143" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+                </div>
+                <p class="chick">CHICKEN</p>
+            </div>
+            <div class="category-item">
+                <div class="snacks">
+                  <svg width="55" height="35" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.3332 14.375C12.6732 14.375 6.98448 18.9029 4.73982 25.2777C3.92582 27.5871 3.52036 28.7402 4.45461 30.0368C5.38732 31.3333 6.91202 31.3333 9.9599 31.3333H28.7066C31.756 31.3333 33.2807 31.3333 34.2134 30.0368C35.1476 28.7402 34.7422 27.5855 33.9297 25.2777C31.682 18.9029 25.9932 14.375 19.3332 14.375Z" stroke="#9A951E" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M33.717 23.625C34.445 22.6756 34.8082 21.4964 34.7403 20.3019C34.6724 19.1073 34.1779 17.9769 33.347 17.1161C32.5555 16.2862 32.0676 15.2132 31.9625 14.0713C31.7344 11.4859 29.5483 9.42162 26.8072 9.22429L26.4927 9.20116C25.2876 9.118 24.1334 8.6827 23.1735 7.94933C20.9458 6.23808 17.7206 6.23808 15.4945 7.94933C14.5341 8.68299 13.3794 9.11829 12.1737 9.20116L11.8592 9.22429C9.11812 9.42162 6.93203 11.4859 6.70387 14.0713C6.59875 15.2132 6.1109 16.2862 5.31945 17.1161C4.48846 17.9769 3.99405 19.1073 3.92615 20.3019C3.85824 21.4964 4.22136 22.6756 4.94945 23.625M9.30774 26.7083H9.29387M11.6218 22.0833H11.6094" stroke="#9A951E" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                    
+                </div>
+                <p class="snack">SNACKS</p>
+            </div>
+            <div class="category-item">
+                <div class="beef-pork">
+                  <svg width="55" height="35" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.1642 13.4222L24.1951 10.3898C23.8365 10.0313 23.5719 9.58991 23.4246 9.10473C23.2773 8.61955 23.252 8.10553 23.3508 7.60822C23.4496 7.1109 23.6696 6.64564 23.9912 6.25362C24.3127 5.86161 24.726 5.55496 25.1944 5.36082C25.6628 5.16668 26.1719 5.09105 26.6765 5.14063C27.1811 5.19021 27.6657 5.36347 28.0874 5.64506C28.509 5.92665 28.8547 6.30788 29.0939 6.75498C29.333 7.20209 29.4582 7.70127 29.4583 8.20831C29.9655 8.20794 30.4649 8.33269 30.9124 8.5715C31.3598 8.81031 31.7414 9.1558 32.0234 9.57735C32.3054 9.99891 32.479 10.4835 32.5289 10.9882C32.5788 11.4929 32.5035 12.0022 32.3095 12.4708C32.1155 12.9394 31.809 13.3529 31.417 13.6747C31.025 13.9966 30.5597 14.2167 30.0623 14.3157C29.5648 14.4147 29.0507 14.3894 28.5654 14.2422C28.08 14.0949 27.6385 13.8302 27.28 13.4716L24.4741 16.2789M11.7292 25.1666L13.2708 26.7083M9.26867 29.1688C13.482 33.3837 18.3645 35.3355 20.1683 33.5302C21.9751 31.7233 20.0233 26.8424 15.8084 22.6291C11.595 18.4141 6.71259 16.4624 4.90884 18.2677C3.10201 20.0745 5.05376 24.9554 9.26867 29.1688Z" stroke="#D09189" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20.1698 33.5302C26.19 27.5084 27.6546 19.2112 23.4396 14.9978C19.2263 10.7829 10.929 12.2475 4.90881 18.2677" stroke="#D09189" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>  
+                </div>
+                <p class="beef">BEEF/PORK</p>
+            </div>
+            <div class="category-item">
+                <div class="dessert">
+                  <svg width="55" height="35" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.656 14.6463C11.3751 15.0129 10.2483 15.7864 9.44589 16.8499C8.64349 17.9135 8.20906 19.2093 8.20825 20.5416M12.656 14.6463C15.693 13.7784 22.1249 13.2203 23.3582 9.76077M12.656 14.6463C12.656 8.20831 18.9999 9.74998 18.9999 3.58331C22.1557 3.58331 24.4004 6.83623 23.3582 9.76077M23.3582 9.76077C25.8665 9.54494 27.5469 12.4294 26.2226 14.4952C25.8002 15.1535 25.1065 15.69 24.3958 16.1001M26.2226 14.4968C29.2397 15.1982 29.7916 17.91 29.7916 20.5416" stroke="#9374EB" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25.1666 23.5464C25.1666 19.5396 31.3333 19.5396 31.3333 23.5464C31.3333 25.6461 30.1693 27.4452 29.2644 29.2659C28.0218 31.7727 27.399 33.0245 26.2812 33.7214C25.1635 34.4182 23.773 34.4166 20.9918 34.4166H17.0081C14.227 34.4166 12.8364 34.4166 11.7187 33.7214C10.601 33.0245 9.97967 31.7727 8.73554 29.2659C7.83058 27.4452 6.66663 25.6461 6.66663 23.5464C6.66663 19.5396 12.8333 19.5396 12.8333 23.5464C12.8333 19.5396 19 19.5396 19 23.5464C19 19.5396 25.1666 19.5396 25.1666 23.5464Z" stroke="#9374EB" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                    
+                </div>
+                <p class="des">DESSERT</p>
             </div>
         </div>
-
-        <div class="kort" id="kort3">
-  
-          <img class="image" src="img/chicken.png" draggable="false" onclick="expand(this.src)">
-              <div class="kortLayer" id="kortLayer1">
-                  <h2 class="cardTitle" id="card1Title">Instant Pot Chicken Marinara</h2>
-                  <div class="todays_recipes_content_block_text">
-                    <div class="todays_recipes_content_block_text_top">
-                      <p class="cardBody">Lorem Ipsum is simply dummy text of the</p>
-                    </div>
-                    <div class="todays_recipes_content_block_text_bottom">
-                      <div class="todays_recipes_content_block_bottom_area">
-                        <div class="todays_recipes_content_block_bottom_area_left">
-                          <p class="category-color category-seafood">Seafood</p>
-                          <p class="recipeTitle">Recipe</p>
-                        </div>
-                        <div class="todays_recipes_content_block_bottom_area_right">
-                          <button>
-                            <a href="subpage.html">How to</a>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-          </div>
     </div>
-  </div>
+    </section>
 
-  
+    <div class="bigImage">
+        <img src="img/Maskgroup.png" alt="">
+      <div class="textBox">
+        <p class="bold">In the kitchen</p>
+        <h1>All-star showdown</h1>
+        <p>Big brawl in kitchen. Who takes it? 
+          Winner gets to take home the desserts! 
+          Losers can wave goodbye! </p>
+      </div>
+    </div>
 
-    <section class="categories"></section>
+    <section class="content_area">
+      
+      <div class="in_thekitchen_headline">
+        <h3>IN THE KITCHEN</h3>
+      </div>
+    
+      
+      <div class="text-content content_area_swap">
+        <div class="text-content-no-button">
+        <span class="small-heading">In the kitchen</span>
+        <h2>HOW TO PLATE AS A PRO</h2>
+        <p>Plating techniques - no salt bae crap. See how to properly arrange and design a plate.</p>
+      </div>
+        <button class="plating-button">PLATING</button>
+      </div>
+    
+      
+      <div class="image-content content_area_swap">
+        <img src="img/Image_tomato2.png" alt="Plating example">
+      </div>
 
-    <section class="content_image"></section>
+      <div class="image-content content_area_swap">
+        <img src="img/appelsiner.png" alt="Recipies are for">
+      </div>
 
-    <section class="content_area"></section>
+      <div class="text-content  content_area_swap">
+        <div class="text-content-no-button">
+        <span class="small-heading">In the kitchen</span>
+        <h2>RECIPES ARE FOR...</h2>
+        <p>Big brawl in kitchen. Who takes it? Winner gets to take home the desserts! Losers can wave goodbye!</p>
+      </div>
+        <button class="plating-button">RECIPE</button>
+      </div>
 
-    <footer></footer>
+      <div class="text-content content_area_swap">
+        <div class="text-content-no-button">
+        <span class="small-heading">In the kitchen</span>
+        <h2>MEATS - HOW TO BASTE</h2>
+        <p>Big brawl in kitchen. Who takes it? Winner gets to take home the desserts! Very scrumptious!</p>
+      </div>
+        <button class="plating-button">GUIDES</button>
+      </div>
 
-  </div>
-  <div class="searchContainer2">
-    <div class="category">
-        <button class="btn2"><img src="img/rat.jpg" alt=""></button>
-        <p>Dinner</p>
-    </div>
-    <div class="category">
-        <button class="btn2"><img src="img/rat.jpg" alt=""></button>
-        <p>Lunch</p>
-    </div>
-    <div class="category">
-        <button class="btn2"><img src="img/rat.jpg" alt=""></button>
-        <p>Breakfast</p>
-    </div>
-    <div class="category">
-        <button class="btn2"><img src="img/rat.jpg" alt=""></button>
-        <p>Chicken</p>
-    </div>
-    <div class="category">
-        <button class="btn2"><img src="img/rat.jpg" alt=""></button>
-        <p>Pasta</p>
-    </div>
-    <div class="category">
-        <button class="btn2"><img src="img/rat.jpg" alt=""></button>
-        <p>Soup</p>
-    </div>
-    <div class="category">
-        <button class="btn2"><img src="img/rat.jpg" alt=""></button>
-        <p>Vegan</p>
-    </div>
-</div>
-  <div class="searchContainer">
-    <input type="text" name="Name" placeholder="Search our Recipes" required id="nameText">
-    <button type="submit" class="btn">View All</button>
-  </div>
-  
+      <div class="image-content content_area_swap">
+        <img src="img/gammelkok.png" alt="Chef">
+      </div>
 
+
+    </section>
+
+    <footer class="footer">
+      <div class="footerContainer">
+        <div class="footerLeft">
+            <div class="social-links">
+                <a href="https://www.youtube.com" target="_blank">
+                    <i class="fab fa-youtube"></i> YouTube
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="subpage.html">Recipe</a>
+                <a href="about.html">About us</a>
+            </div>
+            <div class="separatingLine"></div>
+
+            <div class="spotify-links">
+                <a href="https://open.spotify.com/track/4gRAOi5xxXjAhHaVpPnUN?si=aaba07b09223416c" target="_blank">
+                  https://open.spotify.com/track/4gRA0i5sxx3jAhHaVjPnUN?si=aaba07b09223416c
+                </a>
+                <a href="https://open.spotify.com/album/6XuuZz00jxRPEzi4J9ne8" target="_blank">
+                  https://open.spotify.com/album/6Xuu2z00jxRPZei4IJ9neK
+                </a>
+            </div>
+        </div>
+      </div>
+        
+    </footer>
 </body>
 </html>
